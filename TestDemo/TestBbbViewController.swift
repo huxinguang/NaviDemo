@@ -20,7 +20,7 @@ class TestBbbViewController: BaseViewController {
     }
 
     @IBAction func test(_ sender: Any) {
-        
+        navigationController?.popToRootViewController(animated: true)
     }
     
     /*

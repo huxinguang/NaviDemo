@@ -46,10 +46,15 @@ class CustomNavigationTransition: NSObject {
         
         transitionContext.containerView.addSubview(toVC!.view)
         transitionContext.containerView.addSubview(toVC!.snapshot!)
-        transitionContext.containerView.addSubview(fromVC.snapshot!)
-        
+        if fromVC.snapshot != nil {
+            transitionContext.containerView.addSubview(fromVC.snapshot!)
+        }
+    
         transitionContext.containerView.sendSubviewToBack(toVC!.snapshot!)
-        transitionContext.containerView.bringSubviewToFront(fromVC.snapshot!)
+        if fromVC.snapshot != nil {
+            transitionContext.containerView.bringSubviewToFront(fromVC.snapshot!)
+        }
+        
         
         
         fromVC.view.isHidden = true
@@ -72,7 +77,7 @@ class CustomNavigationTransition: NSObject {
                 fromVC.navigationController?.navigationBar.isHidden = false
                 toVC?.view.isHidden = false
                 fromVC.view.isHidden = false
-                fromVC.snapshot!.removeFromSuperview()
+                fromVC.snapshot?.removeFromSuperview()
                 toVC?.snapshot!.removeFromSuperview()
                 maskView.removeFromSuperview()
                 fromVC.snapshot = nil

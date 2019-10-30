@@ -60,10 +60,13 @@ extension BaseNavigationController: UINavigationControllerDelegate{
         
     }
     
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        print("\(viewController.self)"+"willShow")
+    }
     
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        print("didShow")
+        print("\(viewController.self)"+"didShow")
         if viewController.isKind(of: SignInVC.self) || viewController.isKind(of: TestAaaViewController.self){
             navigationController.setNavigationBarHidden(true, animated: false)
         }else{
