@@ -1,5 +1,5 @@
 //
-//  TestAaaViewController.swift
+//  TestBbbViewController.swift
 //  TestDemo
 //
 //  Created by xinguang hu on 2019/10/30.
@@ -8,28 +8,21 @@
 
 import UIKit
 
-class TestAaaViewController: BaseViewController {
+class TestBbbViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     @IBAction func test(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func pushpage(_ sender: Any) {
-        navigationController?.setNavigationBarHidden(false, animated: false)
-        let vc = TestBbbViewController()
-        navigationController?.pushViewController(vc, animated: true)
         
     }
+    
     /*
     // MARK: - Navigation
 

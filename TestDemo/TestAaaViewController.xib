@@ -17,16 +17,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-p9-bgN">
-                    <rect key="frame" x="184" y="272" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-p9-bgN">
+                    <rect key="frame" x="192" y="438" width="30" height="30"/>
+                    <state key="normal" title="Pop"/>
                     <connections>
                         <action selector="test:" destination="-1" eventType="touchUpInside" id="K0S-dQ-lq7"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8X-qE-FtA">
+                    <rect key="frame" x="189.5" y="509" width="35" height="30"/>
+                    <state key="normal" title="Push"/>
+                    <connections>
+                        <action selector="pushpage:" destination="-1" eventType="touchUpInside" id="bge-3C-4vl"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a8X-qE-FtA" firstAttribute="top" secondItem="eX0-p9-bgN" secondAttribute="bottom" constant="41" id="0DH-vV-685"/>
+                <constraint firstItem="a8X-qE-FtA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ukv-GL-GWV"/>
+                <constraint firstItem="eX0-p9-bgN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="w0M-OL-yjV"/>
+                <constraint firstItem="eX0-p9-bgN" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="w6G-e6-kmY"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="119"/>
         </view>

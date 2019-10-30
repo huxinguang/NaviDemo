@@ -26,6 +26,8 @@
 		96508BF7235DAE6400433747 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96508BF1235DAE6400433747 /* DetailViewController.xib */; };
 		965A90D92369694300CCD688 /* TestAaaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A90D72369694300CCD688 /* TestAaaViewController.swift */; };
 		965A90DA2369694300CCD688 /* TestAaaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A90D82369694300CCD688 /* TestAaaViewController.xib */; };
+		965A90DD236976C700CCD688 /* TestBbbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A90DB236976C700CCD688 /* TestBbbViewController.swift */; };
+		965A90DE236976C700CCD688 /* TestBbbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A90DC236976C700CCD688 /* TestBbbViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		96508BF1235DAE6400433747 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		965A90D72369694300CCD688 /* TestAaaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAaaViewController.swift; sourceTree = "<group>"; };
 		965A90D82369694300CCD688 /* TestAaaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAaaViewController.xib; sourceTree = "<group>"; };
+		965A90DB236976C700CCD688 /* TestBbbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBbbViewController.swift; sourceTree = "<group>"; };
+		965A90DC236976C700CCD688 /* TestBbbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestBbbViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				96508BF1235DAE6400433747 /* DetailViewController.xib */,
 				965A90D72369694300CCD688 /* TestAaaViewController.swift */,
 				965A90D82369694300CCD688 /* TestAaaViewController.xib */,
+				965A90DB236976C700CCD688 /* TestBbbViewController.swift */,
+				965A90DC236976C700CCD688 /* TestBbbViewController.xib */,
 				96508BB2235D7E5400433747 /* Main.storyboard */,
 				96508BB5235D7E5500433747 /* Assets.xcassets */,
 				96508BB7235D7E5500433747 /* LaunchScreen.storyboard */,
@@ -167,6 +173,7 @@
 				96508BF5235DAE6400433747 /* SignInVC.xib in Resources */,
 				96508BB9235D7E5500433747 /* LaunchScreen.storyboard in Resources */,
 				96508BF7235DAE6400433747 /* DetailViewController.xib in Resources */,
+				965A90DE236976C700CCD688 /* TestBbbViewController.xib in Resources */,
 				96508BF3235DAE6400433747 /* TestViewController.xib in Resources */,
 				965A90DA2369694300CCD688 /* TestAaaViewController.xib in Resources */,
 				96508BB6235D7E5500433747 /* Assets.xcassets in Resources */,
@@ -189,6 +196,7 @@
 				96508BB1235D7E5400433747 /* ViewController.swift in Sources */,
 				96508BAD235D7E5400433747 /* AppDelegate.swift in Sources */,
 				96508BC1235D7F3F00433747 /* BaseViewController.swift in Sources */,
+				965A90DD236976C700CCD688 /* TestBbbViewController.swift in Sources */,
 				96508BC7235D7FC300433747 /* BaseNavigationController.swift in Sources */,
 				96508BF6235DAE6400433747 /* DetailViewController.swift in Sources */,
 				96508BF4235DAE6400433747 /* TestViewController.swift in Sources */,
