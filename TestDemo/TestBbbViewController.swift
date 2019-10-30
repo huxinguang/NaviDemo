@@ -20,7 +20,10 @@ class TestBbbViewController: BaseViewController {
     }
 
     @IBAction func test(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+        let vc = navigationController?.children[0]
+        navigationController?.setNavigationBarHidden(vc!.navigationBarHiddenInVC, animated: false)
+        navigationController?.popToViewController(vc!, animated: true)
+//        navigationController?.popToRootViewController(animated: true)
     }
     
     /*

@@ -23,6 +23,7 @@ class DetailViewController: BaseViewController {
     @IBAction func pushPage(_ sender: Any) {
         navigationController?.setNavigationBarHidden(true, animated: false)
         let vc = TestAaaViewController()
+        vc.navigationBarHiddenInVC = true
         navigationController?.pushViewController(vc, animated: true)
     }
     /*

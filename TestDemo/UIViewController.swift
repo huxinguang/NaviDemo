@@ -13,6 +13,7 @@ extension UIViewController{
     
     private struct AssociatedKeys {
         static var snapshotKey = "SnapshotKey"
+        static var navigaitionBarHiddenKey = "NavigaitionBarHiddenKey"
     }
     
     var snapshot: UIView? {
@@ -23,6 +24,14 @@ extension UIViewController{
                 snapshotView?.layer.shadowColor = UIColor.black.cgColor
                 snapshotView?.layer.shadowOpacity = 0.2
                 
+//                if navigationController == nil {
+//                    print("\(self.self)"+"navigationController为空")
+//                }
+//                
+//                if snapshotView == nil {
+//                    print("\(self.self)"+"snapshotView为空")
+//                }
+                
                 objc_setAssociatedObject(self, &AssociatedKeys.snapshotKey, snapshotView, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
             return snapshotView
@@ -31,6 +40,21 @@ extension UIViewController{
             objc_setAssociatedObject(self, &AssociatedKeys.snapshotKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
+    
+    var navigationBarHiddenInVC: Bool!{
+        get{
+            var value = objc_getAssociatedObject(self, &AssociatedKeys.navigaitionBarHiddenKey) as? Bool
+            if value == nil {
+                value = false
+                objc_setAssociatedObject(self, &AssociatedKeys.navigaitionBarHiddenKey, value, .OBJC_ASSOCIATION_ASSIGN)
+            }
+            return value
+        }
+        set{
+            objc_setAssociatedObject(self, &AssociatedKeys.navigaitionBarHiddenKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
+        }
+    }
+    
     
     
 }

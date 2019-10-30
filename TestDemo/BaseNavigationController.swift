@@ -48,6 +48,7 @@ extension BaseNavigationController: UINavigationControllerDelegate{
     }
     
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
         let vc = fromVC as! BaseViewController
         if vc.interactivePopTransition != nil {
             let transitioning = CustomNavigationTransition(operation: operation)
@@ -67,12 +68,7 @@ extension BaseNavigationController: UINavigationControllerDelegate{
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         print("\(viewController.self)"+"didShow")
-        if viewController.isKind(of: SignInVC.self) || viewController.isKind(of: TestAaaViewController.self){
-            navigationController.setNavigationBarHidden(true, animated: false)
-        }else{
-            navigationController.setNavigationBarHidden(false, animated: false)
-        }
-        
+        navigationController.setNavigationBarHidden(viewController.navigationBarHiddenInVC, animated: false)
         
     }
     

@@ -17,6 +17,7 @@ class MainViewController: BaseViewController {
 
     @IBAction func test(_ sender: Any) {
         let vc = SignInVC()
+        vc.navigationBarHiddenInVC = true
         let nav = BaseNavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
         present(nav, animated: true, completion: nil)

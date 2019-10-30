@@ -14,7 +14,7 @@ class SignInVC: BaseViewController {
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var agreementBtn: UIButton!
     
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         signUpBtn.layer.borderWidth = 0.5

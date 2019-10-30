@@ -15,8 +15,6 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        navigationController?.delegate = self
-        
-        
         if navigationController != nil && self != navigationController?.viewControllers.first {
             let popGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePopGesture))
             popGesture.edges = .left
