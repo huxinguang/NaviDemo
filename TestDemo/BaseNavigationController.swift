@@ -65,11 +65,9 @@ extension BaseNavigationController: UINavigationControllerDelegate{
         print("\(viewController.self)"+"willShow")
     }
     
-    
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         print("\(viewController.self)"+"didShow")
         navigationController.setNavigationBarHidden(viewController.navigationBarHiddenInVC, animated: false)
-        
     }
     
     

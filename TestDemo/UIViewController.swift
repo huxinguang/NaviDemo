@@ -23,15 +23,6 @@ extension UIViewController{
                 snapshotView = navigationController?.view.snapshotView(afterScreenUpdates: false)
                 snapshotView?.layer.shadowColor = UIColor.black.cgColor
                 snapshotView?.layer.shadowOpacity = 0.2
-                
-//                if navigationController == nil {
-//                    print("\(self.self)"+"navigationController为空")
-//                }
-//                
-//                if snapshotView == nil {
-//                    print("\(self.self)"+"snapshotView为空")
-//                }
-                
                 objc_setAssociatedObject(self, &AssociatedKeys.snapshotKey, snapshotView, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
             return snapshotView
