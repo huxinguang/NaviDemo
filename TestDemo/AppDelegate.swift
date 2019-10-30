@@ -15,9 +15,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
 //        window?.backgroundColor = UIColor.white
-        window?.rootViewController = BaseNavigationController(rootViewController: MainViewController())
+        window?.rootViewController = initTabBarController()
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    func initTabBarController() -> UITabBarController {
+        let tabVC: UITabBarController = UITabBarController()
+        tabVC.tabBar.barTintColor = UIColor.white
+        tabVC.tabBar.isTranslucent = false
+        
+        let vc1 = LeftViewController()
+        let vc2 = CenterViewController()
+        let vc3 = RightViewController()
+        let vcs = [vc1,vc2,vc3]
+        let titles = ["Left","Center","Right"]
+        for i in 0..<titles.count {
+            let vc = vcs[i]
+            vc.title = titles[i]
+            let item = UITabBarItem(tabBarSystemItem: .favorites, tag: i)
+            let nav = BaseNavigationController(rootViewController: vc)
+            nav.tabBarItem = item
+            tabVC.addChild(nav)
+        }
+        
+        return tabVC
     }
 
     // MARK: UISceneSession Lifecycle

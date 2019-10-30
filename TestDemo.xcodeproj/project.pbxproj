@@ -13,8 +13,8 @@
 		96508BB6235D7E5500433747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96508BB5235D7E5500433747 /* Assets.xcassets */; };
 		96508BB9235D7E5500433747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96508BB7235D7E5500433747 /* LaunchScreen.storyboard */; };
 		96508BC1235D7F3F00433747 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96508BC0235D7F3F00433747 /* BaseViewController.swift */; };
-		96508BC4235D7F7600433747 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96508BC2235D7F7600433747 /* MainViewController.swift */; };
-		96508BC5235D7F7600433747 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96508BC3235D7F7600433747 /* MainViewController.xib */; };
+		96508BC4235D7F7600433747 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96508BC2235D7F7600433747 /* LeftViewController.swift */; };
+		96508BC5235D7F7600433747 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96508BC3235D7F7600433747 /* LeftViewController.xib */; };
 		96508BC7235D7FC300433747 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96508BC6235D7FC300433747 /* BaseNavigationController.swift */; };
 		96508BC9235D80DD00433747 /* CustomNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96508BC8235D80DD00433747 /* CustomNavigationTransition.swift */; };
 		96508BCB235D819300433747 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96508BCA235D819300433747 /* UIViewController.swift */; };
@@ -28,6 +28,10 @@
 		965A90DA2369694300CCD688 /* TestAaaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A90D82369694300CCD688 /* TestAaaViewController.xib */; };
 		965A90DD236976C700CCD688 /* TestBbbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A90DB236976C700CCD688 /* TestBbbViewController.swift */; };
 		965A90DE236976C700CCD688 /* TestBbbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A90DC236976C700CCD688 /* TestBbbViewController.xib */; };
+		965A90E123699C9D00CCD688 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A90DF23699C9D00CCD688 /* CenterViewController.swift */; };
+		965A90E223699C9D00CCD688 /* CenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A90E023699C9D00CCD688 /* CenterViewController.xib */; };
+		965A90E523699CAE00CCD688 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A90E323699CAE00CCD688 /* RightViewController.swift */; };
+		965A90E623699CAE00CCD688 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A90E423699CAE00CCD688 /* RightViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +43,8 @@
 		96508BB8235D7E5500433747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96508BBA235D7E5500433747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96508BC0235D7F3F00433747 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		96508BC2235D7F7600433747 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		96508BC3235D7F7600433747 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		96508BC2235D7F7600433747 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		96508BC3235D7F7600433747 /* LeftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		96508BC6235D7FC300433747 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		96508BC8235D80DD00433747 /* CustomNavigationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTransition.swift; sourceTree = "<group>"; };
 		96508BCA235D819300433747 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,10 @@
 		965A90D82369694300CCD688 /* TestAaaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAaaViewController.xib; sourceTree = "<group>"; };
 		965A90DB236976C700CCD688 /* TestBbbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBbbViewController.swift; sourceTree = "<group>"; };
 		965A90DC236976C700CCD688 /* TestBbbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestBbbViewController.xib; sourceTree = "<group>"; };
+		965A90DF23699C9D00CCD688 /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		965A90E023699C9D00CCD688 /* CenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CenterViewController.xib; sourceTree = "<group>"; };
+		965A90E323699CAE00CCD688 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		965A90E423699CAE00CCD688 /* RightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +100,12 @@
 				96508BC0235D7F3F00433747 /* BaseViewController.swift */,
 				96508BC6235D7FC300433747 /* BaseNavigationController.swift */,
 				96508BC8235D80DD00433747 /* CustomNavigationTransition.swift */,
-				96508BC2235D7F7600433747 /* MainViewController.swift */,
-				96508BC3235D7F7600433747 /* MainViewController.xib */,
+				96508BC2235D7F7600433747 /* LeftViewController.swift */,
+				96508BC3235D7F7600433747 /* LeftViewController.xib */,
+				965A90DF23699C9D00CCD688 /* CenterViewController.swift */,
+				965A90E023699C9D00CCD688 /* CenterViewController.xib */,
+				965A90E323699CAE00CCD688 /* RightViewController.swift */,
+				965A90E423699CAE00CCD688 /* RightViewController.xib */,
 				96508BEC235DAE6400433747 /* SignInVC.swift */,
 				96508BEF235DAE6400433747 /* SignInVC.xib */,
 				96508BEE235DAE6400433747 /* TestViewController.swift */,
@@ -173,12 +185,14 @@
 				96508BF5235DAE6400433747 /* SignInVC.xib in Resources */,
 				96508BB9235D7E5500433747 /* LaunchScreen.storyboard in Resources */,
 				96508BF7235DAE6400433747 /* DetailViewController.xib in Resources */,
+				965A90E623699CAE00CCD688 /* RightViewController.xib in Resources */,
 				965A90DE236976C700CCD688 /* TestBbbViewController.xib in Resources */,
 				96508BF3235DAE6400433747 /* TestViewController.xib in Resources */,
+				965A90E223699C9D00CCD688 /* CenterViewController.xib in Resources */,
 				965A90DA2369694300CCD688 /* TestAaaViewController.xib in Resources */,
 				96508BB6235D7E5500433747 /* Assets.xcassets in Resources */,
 				96508BB4235D7E5400433747 /* Main.storyboard in Resources */,
-				96508BC5235D7F7600433747 /* MainViewController.xib in Resources */,
+				96508BC5235D7F7600433747 /* LeftViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965A90E123699C9D00CCD688 /* CenterViewController.swift in Sources */,
+				965A90E523699CAE00CCD688 /* RightViewController.swift in Sources */,
 				96508BCB235D819300433747 /* UIViewController.swift in Sources */,
 				96508BC9235D80DD00433747 /* CustomNavigationTransition.swift in Sources */,
 				96508BF2235DAE6400433747 /* SignInVC.swift in Sources */,
@@ -200,7 +216,7 @@
 				96508BC7235D7FC300433747 /* BaseNavigationController.swift in Sources */,
 				96508BF6235DAE6400433747 /* DetailViewController.swift in Sources */,
 				96508BF4235DAE6400433747 /* TestViewController.swift in Sources */,
-				96508BC4235D7F7600433747 /* MainViewController.swift in Sources */,
+				96508BC4235D7F7600433747 /* LeftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  LeftViewController.swift
 //  TestDemo
 //
 //  Created by xinguang hu on 2019/10/21.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
+class LeftViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
